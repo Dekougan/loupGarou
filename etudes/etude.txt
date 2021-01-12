@@ -1,0 +1,78 @@
+==================================================
+Etude Preliminaire
+@startuml
+
+class LoupGarou
+	note right of LoupGarou 
+	peut ce faire tuer la nuit
+	peut ce faire voter le jour
+	chaque nuit vote pour tuer une personne (villageois/Loup)
+	end note
+
+class Villageois
+	note right of Villageois 
+	peut ce faire tuer la nuit
+	peut ce faire voter le jour
+	possede un role ou non
+	si il as un role le joue pdt la nuit
+	end note
+
+class Plateau
+	note right of Plateau
+	possede 2 cycle (Jour/Nuit)
+	Une Nuit est composser de plusieur tour (voir tourDeJeu.txt)
+	Le Jour les villageois ont un certain temps pour voter qui lyncher
+	end note
+
+@enduml
+
+==================================================
+Version 0.0.1
+@startuml
+
+class LoupGarou {
+	- boolean enVie
+	+ LoupGarou()
+	+ void voteKill()
+}
+
+class Villageois{
+	- boolean enVie
+	+ Villageois()
+} 
+
+class Role{
+	+ Role()
+	+ void actionRole()
+}
+
+	note right of Role
+	Ils y a plusieurs role distribues aleatoirement 
+	end note
+
+Villageois <|-- Role
+
+class Plateau{
+	+ Plateau()
+	+ void jouer1Nuit()
+	+ void tourNuit()
+	+ void tourJour()
+}
+
+Plateau -->"*" Villageois:leVillageois
+Plateau -->"*" LoupGarou:leLoupGarou
+
+	note right of Plateau::tourNuit
+	Une Nuit est composser de plusieurs tour (voir tourDeJeu.txt)
+	end note
+	note right of Plateau::tourJour
+	Le Jour les villageois ont un certain temps pour voter qui lyncher
+	end note
+
+class JeuLG{
+	+ JeuLG()
+	+ void afficher()
+}
+	
+@enduml
+==================================================

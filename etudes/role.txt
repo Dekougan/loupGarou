@@ -1,0 +1,62 @@
+le principe du jeu est celui du jeu de societe loup-garou de tiercelieux avec des regles "personnaliser" dispo ici http://lesloupsgarous.free.fr/htm/regles.html
+
+Regles du jeu
+	• Pour les Villageois : éliminer les Loups-garous.
+	• Pour les Loups-garous : éliminer les Villageois
+	
+Les Roles
+	- - - - - Les Loups-Garou - - - - -
+	Chaque nuit, ils égorgent un Villageois.
+	Le jour ils se font passer pour des Villageois afin de ne pas être démasqués
+	
+		-Loup garou simple
+			Loup garou de bases
+	
+	- - - - - Le Village - - - - -
+	Chaque nuit, l’un d’entre eux est égorgé par le ou les Loups-Garous.
+	Ce joueur est éliminé du jeu, et ne peut plus participer aux débats. 
+	Les Villageois survivants doivent chaque jour lyncher un des joueur, dans l’espoir qu’il soit Loup-Garou
+	
+		-Simple Villageois
+			Il n’a aucune compétence particulière, il faut juste que le joueur soit très intuitif.
+			
+		-Voyante 
+			Chaque nuit, elle connaît la vrai personnalité d’un joueur de son choix, elle doit aider les Villageois, sans être démasquée par les Loups-Garous
+			
+		-Chasseur
+			Le chasseur, s’il se fait égorger par les Loups-Garous ou lyncher par les joueurs, a le pouvoir de répliquer en tuant immédiatement n’importe quel autre joueur.
+			
+		-Cupidon
+			La première nuit, il désigne 2 joueurs qui seront follement Amoureux l’un de l’autre.
+			Si l’un d’eux meurt, l’autre meurt de chagrin immédiatement. 
+			Un Loup-Garou et un villageois peuvent être Amoureux l'un de l'autre. 
+			Ils jouent alors contre tous les autres, Loups-Garous et Villageois.
+			Si les amoureux survivent, alors ce sont eux qui gagnent
+			Le cupidon peut se désigner lui-même comme un des 2 Amoureux
+		
+		-Sorciere
+			Elle sait concocter 2 potions extrêmement puissantes :
+				-une potion de guérison, pour ressusciter le joueur tué par les Loups-Garous,
+				-une potion d’empoisonnement, utilisée la nuit pour éliminer un joueur.
+					La Sorcière doit utiliser chaque potion 1 seule fois dans la partie. 
+					Elle peut se servir des ses 2 potions la même nuit. 
+					Le matin suivant l’usage de ce pouvoir, il pourra donc y avoir soit 0 mort, 1 mort ou 2 morts. 
+					La sorcière peut utiliser les potions à son profit, et donc se guérir elle-même
+		
+		-Voleur
+			Il faut ajouter 2 cartes de plus au jeu.
+			Le Voleur a le droit durant la première nuit d’échanger sa carte contre une des 2 cartes supplémentaires (face cachée) qu’il reste après distribution du jeu.
+			Il jouera désormais ce personnage. 
+			Si ces 2 cartes sont 2 Loups-Garous, le Voleur doit en prendre une.
+			
+		-Petit Fille
+			Elle a le droit, la nuit, au moment où les Loups-Garous désignent leur victime, de lesespionner (en entrouvant les yeux, etc). 
+			Si elle se fait surprendre par un des Loups-Garous, elle meurt immédiatement (en silence), à la place de la victime désignée
+						
+		-Capitaine
+			Cette carte est confiée à un des joueurs, en plus de sa carte personnage. 
+			Le Capitaine est élu par vote, à la majorité relative. 
+			On ne peut refuser l’honneur d’être capitaine.Dorénavant, les votes de ce joueur comptent pour 2 voix. 
+			Si ce joueur se fait éliminer, dans son dernier souffle il désigne son successeur.
+			
+		
