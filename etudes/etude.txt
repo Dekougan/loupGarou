@@ -1,5 +1,6 @@
 ==================================================
-Etude Preliminaire
+			Etude Preliminaire
+==================================================
 @startuml
 
 class LoupGarou
@@ -17,8 +18,8 @@ class Villageois
 	si il as un role le joue pdt la nuit
 	end note
 
-class Plateau
-	note right of Plateau
+class Jeu
+	note right of Jeu
 	possede 2 cycle (Jour/Nuit)
 	Une Nuit est composser de plusieur tour (voir tourDeJeu.txt)
 	Le Jour les villageois ont un certain temps pour voter qui lyncher
@@ -27,8 +28,51 @@ class Plateau
 @enduml
 
 ==================================================
-Version 0.0.1
+				Version 0.0.1
+==================================================
+--------------------------------------------------
+			Diagramme de classe candidate
+--------------------------------------------------
 @startuml
+class LoupGarou {
+}
+	note top of LoupGarou
+	vote la nuit pour eliminer un joueur 
+	vote le jour avec le village
+	peut etre eliminer
+	end note
+	
+class Villageois{
+} 
+	note bottom of Villageois
+	Un villageois peux avoir un role
+	vote le jour avec le village
+	peut etre eliminer
+	end note
+
+class Role{
+}
+	note top of Role
+	Ils y a differents role distribues au villageois aleatoirement 
+	Un role joue a un moment donner
+	peut etre eliminer
+	end note
+
+class Jeu{
+}
+	note bottom of Jeu
+	gere tous le jeu
+	end note
+
+@enduml
+--------------------------------------------------
+			Diagramme de classe
+--------------------------------------------------
+@startuml
+
+Interface Village{
+	+ void voteJour()
+}
 
 class LoupGarou {
 	- boolean enVie
@@ -45,12 +89,9 @@ class Role{
 	+ Role()
 	+ void actionRole()
 }
-
 	note right of Role
 	Ils y a plusieurs role distribues aleatoirement 
 	end note
-
-Villageois <|-- Role
 
 class Plateau{
 	+ Plateau()
@@ -58,10 +99,6 @@ class Plateau{
 	+ void tourNuit()
 	+ void tourJour()
 }
-
-Plateau -->"*" Villageois:leVillageois
-Plateau -->"*" LoupGarou:leLoupGarou
-
 	note right of Plateau::tourNuit
 	Une Nuit est composser de plusieurs tour (voir tourDeJeu.txt)
 	end note
@@ -74,5 +111,27 @@ class JeuLG{
 	+ void afficher()
 }
 	
+Village <|-- Villageois
+Village <|-- LoupGarou
+Villageois <|-- Role
+Plateau --> "1" Village:leVillage
+	
+@enduml
+--------------------------------------------------
+			Diagramme de segnarii
+--------------------------------------------------
+@startuml
+
+title Lancement appli
+actor user
+activate user
+user -> Plateau:<<create>>
+Plateau -> Village:<<create>>
+Village -> LoupGarou:<<create>>
+Village -> Villageois:<<create>>
+Village -> Villageois:<<create>>
+Plateau -> Plateau:lancer()
+deactivate user
+
 @enduml
 ==================================================
